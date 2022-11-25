@@ -1,0 +1,38 @@
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(https://i.imgur.com/rgSOAX6.png);
+}
+.team-body{
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 20%;
+}
+.team-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.team-imgs {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+.team-body:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ccc;
+}
+
+.team-title ,.team-text{
+    font-size: 20px;
+    font-weight: 600;
+    color:  #8a1538;
+    margin: 10px 0;
+}

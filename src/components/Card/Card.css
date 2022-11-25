@@ -1,0 +1,55 @@
+.btnCard{
+    background-color: #8a1538;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;  
+  }
+  .btnCard:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  .button-card{
+    display: flex;    
+    justify-content: space-evenly;
+  }
+
+  .container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #EEEEE4;
+  }
+
+  .leftside{
+    width: 50%;
+
+  }
+
+  .rightside{    
+    width: 50%;
+  }
+
+  .line{
+    border-top: 3px rgb(153, 49, 49) solid;
+  }
+.qaterFont{
+  font-family: Qatar2022, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color:  rgb(138, 21, 56);
+  line-height: 55.2px;
+}

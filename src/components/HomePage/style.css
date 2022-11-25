@@ -1,0 +1,106 @@
+img{
+    width: 100%;
+}
+
+.headerInfo > h1{
+    color: #ffffff;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+.homeimg{
+    position: absolute;
+    top: 480px;
+    right: 320px;
+}
+
+.drops{
+    font-size: 30px;
+    width: 100%;
+    text-decoration: none;
+}
+.homeimg a{
+    text-decoration: none;
+}
+
+.homeText{
+    background-image: url(https://www.qatar2022.qa/sites/default/files/2022-07/bg-orange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;    
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: drop;
+    animation-duration: 2s;
+
+
+
+}
+.textHome{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    font-size: 88px;
+    font-weight: 700;
+    /* put this line in two lines */
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    animation-name: drop2;
+    animation-duration: 2s;
+}
+.textHome2{
+    animation-name: drop2;
+    animation-duration: 2s;    
+}
+
+.btnHome {    
+    background-color:  rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    font-size: 26px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.btnHome:hover{
+    background-color: rgb(46, 45, 45);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+/* create animation */
+@keyframes drop {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes drop2 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(340px);
+    }
+    100% {
+        transform: translateY(0px);
+    } 
+}

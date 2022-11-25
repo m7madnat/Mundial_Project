@@ -1,0 +1,83 @@
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+
+.name{
+    font-family: Qatar2022, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 55.2px;
+    color:rgb(138, 21, 56);
+}
+
+.description{
+    font-family: Qatar2022, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.6px;
+    color:rgb(138, 21, 56);
+    padding-top: 40px;           
+    text-align: center;
+}
+
+.capacity{
+    font-family: Qatar2022, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.6px;
+    color:rgb(138, 21, 56);
+    padding: 20px;        
+}
+.location{
+    font-family: Qatar2022, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.6px;
+    color:rgb(138, 21, 56);
+    padding: 20px;        
+}
+
+.plan{
+    font-family: Qatar2022, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.6px;
+    color:rgb(138, 21, 56);
+    padding: 20px;        
+}
+
+.bg-red2{
+    background-color: #FF4700;
+    height: 150px;
+}
+
+.headQ2{
+    font-family: Qatar2022, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color:  rgb(255, 255, 255);
+    line-height: 55.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imgRadius{
+    border-radius: 30%;
+    width: 80%;
+}
