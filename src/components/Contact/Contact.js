@@ -1,50 +1,25 @@
 const Contact = () => {
   return (
-    <div className="contact">
-      <form
-        name="contact v2"
-        method="post"
-        data-netlify="true"
-        onSubmit="submit"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact v2" />
-
-        <div hidden>
-          <input name="bot-field" />
-        </div>
-
-        <div>
+    <div>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
           <label>
-            First name
-            <br />
-            <input type="text" name="first-name" />
+            Your Name: <input type="text" name="name" />
           </label>
-        </div>
-
-        <div>
+        </p>
+        <p>
           <label>
-            Last name
-            <br />
-            <input type="text" name="last-name" />
+            Your Email: <input type="email" name="email" />
           </label>
-        </div>
-
-        <div>
-          <label htmlFor="email">Email</label>
-          <br />
-          <input id="email" type="email" name="email" />
-        </div>
-
-        <div>
+        </p>
+        <p>
           <label>
-            Any Comments?
-            <br />
-            <textarea name="comments"></textarea>
+            Message: <textarea name="message"></textarea>
           </label>
-        </div>
-
-        <button type="submit">Submit The Results</button>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
     </div>
   );
