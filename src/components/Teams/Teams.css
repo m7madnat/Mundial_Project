@@ -36,3 +36,16 @@
     color:  #8a1538;
     margin: 10px 0;
 }
+
+/* make it responsive */
+@media screen and (max-width: 768px){
+    .team-body{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 480px){
+    .team-body{
+        width: 80%;
+    }
+}
+

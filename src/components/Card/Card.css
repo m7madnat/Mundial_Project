@@ -53,3 +53,22 @@
   color:  rgb(138, 21, 56);
   line-height: 55.2px;
 }
+
+/* make it responsive */
+@media screen and (max-width: 768px) {
+  .container2{
+    flex-direction: column;
+  }
+  .leftside{
+    width: 100%;
+  }
+  .rightside{
+    width: 100%;
+  }
+  .button-card{
+    padding-bottom: 20px;
+  }
+  .qaterFont{
+    font-size: 32px;
+  }
+}

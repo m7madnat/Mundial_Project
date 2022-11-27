@@ -42,3 +42,19 @@ h1{
 .headName {
     text-transform: uppercase;
 }
+/* make it responsive */
+
+@media screen and (max-width: 768px){
+    .navbarLink a{
+        margin: 10px 0;
+    }
+    .headName{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .navbarLink a{
+        margin: 10px 0;
+    }
+}

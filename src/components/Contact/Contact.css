@@ -36,17 +36,41 @@
 .con-right{
     width: 50%;
     float: right;
-
+    background: white;
+    margin-bottom: 30px;
 }
 
 .con-left{
-    width: 50%;
+    width: 100%;
+    background: #FF4700;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
 }
 .full-cont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 50px;
+    height: 81vh;
+    padding-top: 50px;    
+    /* background-image: url("https://img.freepik.com/premium-photo/concept-contact-us-blank-wooden-cubes-square-dice-with-symbol-email-telephone-address-placed-wood-background_44868-1254.jpg?w=2000"); */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/* make it responsive */
+@media screen and (max-width: 768px){
+    .full-cont{
+        flex-direction: column;
+    }
+    .con-right{
+        width: 100%;
+        float: none;
+    }
+    .con-left{
+        width: 100%;
+    }
+}
+
