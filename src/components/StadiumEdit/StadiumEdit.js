@@ -56,7 +56,7 @@ const StadiumEdit = ({name, image, description, capacity,location,plan, id,getUp
           <button className="ButtonD btnCard" onClick={() => setEditing(!editing)}>
               {editing ? "Cancel" : "Edit"}
           </button>
-          <Link to={`/products/${id}`}>
+          <Link to={`/stadiums/${id}`}>
               {editing && <button className="ButtonD btnCard" onClick={handleSave}>Save</button>}            
           </Link>
         </div>     
