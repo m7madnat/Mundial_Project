@@ -5,8 +5,9 @@ import Card from '../Card/Card'
 import AddProduct from '../AddProduct/AddProduct'
 
 const Products = () => {
-const [products, setProducts] = useState([])
-const [loading, setLoading] = useState(true)
+const [products, setProducts] = useState([]);
+const [loading, setLoading] = useState(true);
+
 
 useEffect(() => {
     const fetchData = async () => {

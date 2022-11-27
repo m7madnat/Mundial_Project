@@ -5,7 +5,7 @@ import NotFound from './components/HomePage/NotFound';
 import Products from './components/Products/Products';
 import ProductPage from './components/ProductPage/ProductPage';
 import Teams from './components/Teams/Teams';
-import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import './App.css'
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
             <Route path='/products' element={<Products/>} />
             <Route path='/products/:id' element={<ProductPage/>} />
             <Route path='/Teams' element={<Teams/>}/>
-            <Route path='/About' element={<About/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
             <Route path='*' element={<NotFound/>} />
           </Routes>
         </div>

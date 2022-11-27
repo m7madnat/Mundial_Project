@@ -14,9 +14,10 @@ function Navbar() {
             </Link>
             <Link className='linkBorder' to='/Teams'>
                 Teams
-            </Link>       
-            <Link className='linkBorder' to='/About'>
-                About
+            </Link>   
+
+            <Link className='linkBorder' to='/Contact'>
+                Contact
             </Link>          
             </div>
         </div>

@@ -18,15 +18,13 @@ const AddProduct = ({addProduct, submitted}) => {
     });
     const [name, setName] = React.useState(state.name);
     const [image, setImage] = React.useState(state.image);
-    const [description, setDescription] = React.useState(state.description);
-    const [price, setPrice] = React.useState(state.price);
     const [loading, setLoading] = React.useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
         try {
-            await addProduct(name, image, description, price);
+            await addProduct(name, image);
             setLoading(false);
             togglePopup();
         } catch (e) {
