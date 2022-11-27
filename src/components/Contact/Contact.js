@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div>
-      <form name="contact" action="/success" method="POST">
+      <form name="contact" action="/" method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <input type="text" id="name" name="name" placeholder="Name" required />
         <input type="email" id="email" name="email" placeholder="Email" required />
