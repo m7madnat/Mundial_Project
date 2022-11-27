@@ -9,13 +9,13 @@ function Navbar() {
             <Link className='linkBorder' to='/'>
                 Home
             </Link>
-            <Link className='linkBorder' to='/products'>
+            <Link className='linkBorder' to='/stadiums'>
                 Stadiums
             </Link>
-            <Link className='linkBorder' to='/Teams'>
+            <Link className='linkBorder' to='/teams'>
                 Teams
             </Link>  
-            <Link className='linkBorder' to='/Contact'>
+            <Link className='linkBorder' to='/contact'>
                 Contact
             </Link>          
             </div>

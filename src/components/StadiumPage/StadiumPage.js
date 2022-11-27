@@ -1,12 +1,12 @@
 import React , {useState} from "react";
 import {useParams } from "react-router-dom";
 import { API } from "../../Api";
-import ProductEdit from "../ProductEdit/ProductEdit";
-import "./ProductPage.css";
+import StadiumEdit from "../StadiumEdit/StadiumEdit";
+import "./StadiumPage.css";
 
 
-const ProductPage = (props) => {
-    const [product, setProduct] = useState(null);
+const StadiumPage = (props) => {
+    const [stadium, setStadium] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -15,7 +15,7 @@ const ProductPage = (props) => {
         const fetchData = async () => {
         try {
             const { data } = await API.get(`/stadiums/${id}`);
-            setProduct(data);
+            setStadium(data);
             setLoading(false);
         } catch (e) {
             setError(e.message);
@@ -27,15 +27,15 @@ const ProductPage = (props) => {
     
     const displayCats = () => {
         return (
-            <ProductEdit
-            key={product.id}
-            id={product.id}
-            name={product.name}
-            image={product.image}
-            description={product.description}
-            capacity={product.capacity}
-            location={product.location}
-            plan={product.plan}
+            <StadiumEdit
+            key={stadium.id}
+            id={stadium.id}
+            name={stadium.name}
+            image={stadium.image}
+            description={stadium.description}
+            capacity={stadium.capacity}
+            location={stadium.location}
+            plan={stadium.plan}
             getUpdated={getUpdated}
             />
         );
@@ -49,7 +49,7 @@ const ProductPage = (props) => {
             location,
             plan,
         });
-        setProduct(data);        
+        setStadium(data);        
     }
 
     if (loading) return <div className='loader2' ></div>;
@@ -65,4 +65,4 @@ const ProductPage = (props) => {
     
 
 }
-export default ProductPage;
+export default StadiumPage;

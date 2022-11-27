@@ -2,7 +2,7 @@ import React from "react";
 import Input from "./Input";
 import Popup from "./Popup";
 
-const AddProduct = ({addProduct, submitted}) => {
+const AddStadium = ({addStadium, submitted}) => {
 
     const [isOpen, setIsOpen] = React.useState(false);
  
@@ -24,7 +24,7 @@ const AddProduct = ({addProduct, submitted}) => {
         e.preventDefault();
         setLoading(true);
         try {
-            await addProduct(name, image);
+            await addStadium(name, image);
             setLoading(false);
             togglePopup();
         } catch (e) {
@@ -68,4 +68,4 @@ const AddProduct = ({addProduct, submitted}) => {
     );
 };             
 
-export default AddProduct;
+export default AddStadium;

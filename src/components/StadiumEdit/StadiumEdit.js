@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import './ProductEdit.css'
-const ProductEdit = ({name, image, description, capacity,location,plan, id,getUpdated}) => {
+import './StadiumEdit.css'
+const StadiumEdit = ({name, image, description, capacity,location,plan, id,getUpdated}) => {
   
   const [editing, setEditing] = useState(false);
   const [nameS, setnameS] = useState(name);
@@ -72,4 +72,4 @@ const ProductEdit = ({name, image, description, capacity,location,plan, id,getUp
   );
 };
 
-export default ProductEdit;
+export default StadiumEdit;

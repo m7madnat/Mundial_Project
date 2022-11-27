@@ -2,8 +2,8 @@ import { Routes,Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './components/HomePage/HomePage';
 import NotFound from './components/HomePage/NotFound';
-import Products from './components/Products/Products';
-import ProductPage from './components/ProductPage/ProductPage';
+import Stadiums from './components/Stadiums/Stadiums';
+import StadiumPage from './components/StadiumPage/StadiumPage';
 import Teams from './components/Teams/Teams';
 import Contact from './components/Contact/Contact';
 import './App.css'
@@ -13,10 +13,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<HomePage/>} />
-            <Route path='/products' element={<Products/>} />
-            <Route path='/products/:id' element={<ProductPage/>} />
-            <Route path='/Teams' element={<Teams/>}/>
-            <Route path='/Contact' element={<Contact/>}/>
+            <Route path='/stadiums' element={<Stadiums/>} />
+            <Route path='/stadiums/:id' element={<StadiumPage/>} />
+            <Route path='/teams' element={<Teams/>}/>
+            <Route path='/contact' element={<Contact/>}/>
             <Route path='*' element={<NotFound/>} />
           </Routes>
         </div>

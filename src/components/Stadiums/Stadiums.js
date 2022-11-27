@@ -1,11 +1,11 @@
-import './Products.css'
+import './Stadiums.css'
 import { useState, useEffect } from 'react'
 import { API } from "../../Api";
 import Card from '../Card/Card'
-import AddProduct from '../AddProduct/AddProduct'
+import AddStadium from '../AddStadium/AddStadium'
 
-const Products = () => {
-const [products, setProducts] = useState([]);
+const Stadiums = () => {
+const [stadiums, setStadiums] = useState([]);
 const [loading, setLoading] = useState(true);
 
 
@@ -15,7 +15,7 @@ useEffect(() => {
         setLoading(true)
         const { data } = await API.get('/stadiums')
         console.log(data)
-        setProducts(data);
+        setStadiums(data);
       } catch (e) {
         console.log(e.message); // ! Handle Error message
 
@@ -25,25 +25,25 @@ useEffect(() => {
     fetchData();
   }, []);
 
-  const deleteProduct = async (id) => {
+  const deleteStadium = async (id) => {
     try {
       setLoading(true)
       await API.delete(`/stadiums/${id}`);
-      setProducts(products.filter((product) => product.id !== id));
+      setStadiums(stadiums.filter((stadium) => stadium.id !== id));
     } catch (e) {
       console.log(e.message); // ! Handle Error message
     }
     setLoading(false)
   };  
 
-  const addProduct = async (name, image) => {
+  const addStadium = async (name, image) => {
     try {
       setLoading(true)
       const { data } = await API.post('/stadiums', {
         name,
         image
       });
-      setProducts([...products, data]);
+      setStadiums([...stadiums, data]);
     } catch (e) {
       console.log(e.message); // ! Handle Error message
     }
@@ -62,15 +62,15 @@ useEffect(() => {
                         <div className='bigDes'>Be Amazed</div>      
                         <div className='smInfo'>Discover our eight spectacular FIFA World Cup Qatar 2022™ stadiums</div>         
                     </div>
-                   <AddProduct className="addProduct" addProduct={addProduct} /> 
+                   <AddStadium className="addProduct" addStadium={addStadium} /> 
                 </div>   
-                {products.map(product => (
-                    <Card key={product.id} product={product}  deleteProduct={deleteProduct}  />
+                {stadiums.map(stadium => (
+                    <Card key={stadium.id} stadium={stadium}  deleteStadium={deleteStadium}  />
                 ))}
             </div>
         </div>
     )
 }
 
-export default Products
+export default Stadiums
 
