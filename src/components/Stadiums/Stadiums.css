@@ -7,7 +7,7 @@
     margin: 10px;
 }
 .addProduct{
-    width: 90%;
+    width: 50%;
     background-color: #f2f2f2;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -17,6 +17,12 @@
     font-weight: 600;
     margin: 10px;
     color: black;
+}
+
+.addProduct:hover{
+    background-color: rgb(247, 96, 96);
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .productsContainer{    

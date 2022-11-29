@@ -51,10 +51,33 @@ h1{
     .headName{
         width: 50%;
     }
-}
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-@media screen and (max-width: 480px){
-    .navbarLink a{
-        margin: 10px 0;
     }
 }
+
+@media screen and (max-width: 428px){
+    .navbarLink{
+        display: block;
+        text-align: center;
+    }
+    .headName{
+        width: 50%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+    
+
+
+
+

@@ -46,10 +46,9 @@ const dotStyle = {
   fontSize: "40px",
 };
 const containerStyles = {
-    width: "1500px",
-    height: "800px",
-    margin: "0 auto",
-  };
+  height: "800px",
+  margin: "0 auto",
+};
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,26 +72,30 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div>
-    <div style={containerStyles}>
-    <div className="slideres" style={sliderStyles}>
-      <div>
-        <div onClick={goToPrevious} style={leftArrowStyles}>
-          ❰
-        </div>
-        <div onClick={goToNext} style={rightArrowStyles}>
-          ❱
-        </div>
-      </div>
-      <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
-          <div style={dotStyle} key={slideIndex} onClick={() => goToSlide(slideIndex)}>
-            __
+      <div style={containerStyles}>
+        <div className="slideres" style={sliderStyles}>
+          <div>
+            <div onClick={goToPrevious} style={leftArrowStyles}>
+              ❰
+            </div>
+            <div onClick={goToNext} style={rightArrowStyles}>
+              ❱
+            </div>
           </div>
-        ))}
+          <div style={slideStylesWidthBackground}></div>
+          <div style={dotsContainerStyles}>
+            {slides.map((slide, slideIndex) => (
+              <div
+                style={dotStyle}
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+              >
+                __
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </div>
   );
 };

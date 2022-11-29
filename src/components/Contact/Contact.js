@@ -7,8 +7,8 @@ const Contact = () => {
         <h1>CONTACT</h1>
         <p>Have a question or comment? We'd love to hear from you!</p>
         <p>Send us a message and we'll respond as soon as possible.</p>
-        <p>if you want mail : m7madnatseh1999@gmail.com</p>
-        <p>if you want hear my voice: +972586217666</p>                        
+        <p>if you want my mail : m7madnatseh1999@gmail.com</p>
+        <p>if you want to hear my voice: +972586217666</p>                        
       </div>
       <div className="con-right">
         <form className="contact" name="contact" method="post">        

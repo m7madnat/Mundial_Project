@@ -25,30 +25,31 @@ const StadiumEdit = ({name, image, description, capacity,location,plan, id,getUp
     <div className='container3'>         
       <div className="left">
         <div className="description">          
-        {editing ?(<input value={imageS} onChange={({ target }) => setimageS(target.value)}/>) :
+        {editing ? (<input className="inptinside" value={imageS} onChange={({ target }) => setimageS(target.value)}/>) :
           null }
         </div>
-        <div className="name">   
-        {editing ? (<input value={nameS} onChange={({ target }) => setnameS(target.value)}/>) :
+        <div className="name">  
+        {editing ? (<input className="inptinside" value={nameS} onChange={({ target }) => setnameS(target.value)}/>) :
           (<div>{name}</div>)}
         </div>       
         <div className="description">
-          {editing ? (<input value={descriptionS} onChange={({ target }) => setdescriptionS(target.value)}/>) :
+        <span>Description:</span>
+          {editing ? (<input className="inptinside" value={descriptionS} onChange={({ target }) => setdescriptionS(target.value)}/>) :
           (<div>{description}</div>)}
         </div>
         <div className="capacity">
           <span>FIFA World Cup 2022™ Stadium Capacity : </span>
-          {editing ? (<input value={capacityS} onChange={({ target }) => setcapacityS(target.value)}/>) :
+          {editing ? (<input className="inptinside" value={capacityS} onChange={({ target }) => setcapacityS(target.value)}/>) :
           (<div style={{fontSize : "40px" ,paddingTop :"10px"}}>{capacity}</div>)}
         </div>
         <div className="location">
           <span>Location: </span>
-          {editing ? (<input value={locationS} onChange={({ target }) => setlocationS(target.value)}/>) :
+          {editing ? (<input className="inptinside" value={locationS} onChange={({ target }) => setlocationS(target.value)}/>) :
           (<div style={{fontSize : "30px"}}>{location}</div>)}
         </div>
         <div className="plan">
           <span>Plan: </span>
-          {editing ? (<input value={planS} onChange={({ target }) => setplanS(target.value)}/>) :
+          {editing ? (<input className="inptinside" value={planS} onChange={({ target }) => setplanS(target.value)}/>) :
           (<div style={{fontSize : "30px"}}>{plan}</div>)}
         </div>
         

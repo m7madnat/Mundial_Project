@@ -22,7 +22,9 @@ const Input = ({id, type, holder, value, callBack, submitted}) => {
                 type={type}
                 placeholder={holder}
                 value={value}
+                className="form-control"
                 required
+
             />
         </>
     );

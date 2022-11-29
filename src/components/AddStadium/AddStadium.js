@@ -46,7 +46,8 @@ const AddStadium = ({addStadium, submitted}) => {
                       holder="Name"
                       value={name}
                       callBack={setName}
-                      submitted={submitted}
+                      submitted={submitted}                      
+                      className="form-control"
                     />
                     <Input
                         id="image"
@@ -54,11 +55,12 @@ const AddStadium = ({addStadium, submitted}) => {
                         holder="Image"
                         value={image}
                         callBack={setImage}
-                        submitted={submitted}
+                        submitted={submitted}                        
+                        className="form-control"
                     />
                     <button type="submit" className="addProduct" onClick={handleSubmit()}   
                     disabled={loading}>
-                    Add Stadium</button>
+                    Add</button>
                     </form>
                 </>}
                 handleClose={togglePopup}
