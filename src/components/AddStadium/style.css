@@ -19,24 +19,27 @@
     height: 400px;
     justify-content: center;
     align-items: center;
-    background-color: #FF4700;
+    font-family: cursive;
+    color: tomato;
+    font-size: 28px;
+
   }
 
   
   .close-icon {
-    content: 'x';
+    content: 'X';
     cursor: pointer;
     position: fixed;
     right: calc(25%);
     top: calc(100vh - 85vh - 10px);
-    background: #ededed;
+    background: #ffffff;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     line-height: 20px;
     text-align: center;
-    border: 1px solid #999;
-    font-size: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 40px;
   }
 
   /* input{
