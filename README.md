@@ -1,3 +1,22 @@
+A react project where I built a Mundial Stadiums and teams App. Where you can add a stadium and edit it and delete it,
+using: JSX State Props CRUD Route API. 
+
+
+## 🚀 Live Demo:
+
+https://mundial-m7mad.netlify.app/
+
+<a href="https://mundial-m7mad.netlify.app/" target="_blank">
+  <img src="https://i.imgur.com/bBY5q4S.png" width=“580” height=“350”>
+</a>
+<a href="https://mundial-m7mad.netlify.app/" target="_blank">
+  <img src="https://i.imgur.com/KetICfe.png" width=“580” height=“350”>
+</a>
+<a href="https://mundial-m7mad.netlify.app/" target="_blank">
+  <img src="https://i.imgur.com/4HqahOx.png" width=“580” height=“350”>
+</a>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
